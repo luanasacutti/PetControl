@@ -1,0 +1,22 @@
+# Binários
+*.exe
+*.dll
+
+# Banco de dados
+*.db
+
+# CSVs sensíveis
+*.csv
+
+# Configurações e credenciais
+config/credentials.cfg
+config/send_email.ps1
+
+# Build
+build/
+
+# VSCode
+.vscode/
+
+# Windows
+desktop.ini
