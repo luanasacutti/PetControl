@@ -20,21 +20,24 @@ Uma ferramenta robusta para controle interno dos planos comprados pelo site, ofe
 
 🔐 Criação automática dos arquivos .db (não enviados ao GitHub)
 
-📁 Estrutura do Projeto Desktop
+📁 **Estrutura do Projeto Desktop PetControl**
+
 PetControl/
- ├── src/
- │   ├── main.c
- │   ├── painel.c
- │   ├── shell.c
- │   ├── sqlite3.c
- │   ├── sqlite3.h
- │   ├── build.bat
- │
- ├── assets/
- │   └── logo.png
- │
- ├── .gitignore
- ├── README.md
+├── src/
+│ ├── main.c
+│ ├── painel.c
+│ ├── shell.c
+│ ├── sqlite3.c
+│ ├── sqlite3.h
+│ └── build.bat
+│
+├── assets/
+│ └── logo.png
+│
+├── .gitignore
+└── README.md
+
+
 
 🔧 Como Compilar (Windows)
 
