@@ -1,0 +1,90 @@
+:root {
+    --turquesa: #2EC4B6;
+    --azul-verde: #1A936F;
+    --laranja: #FF9F1C;
+    --branco: #FFFFFF;
+    --cinza-claro: #F8F9FA;
+    --cinza-escuro: #2D3748;
+    --texto: #333333;
+}
+
+.bg-petcontrol {
+    background: linear-gradient(135deg, var(--azul-verde), var(--turquesa)) !important;
+}
+
+.btn-primary {
+    background-color: var(--turquesa);
+    border-color: var(--turquesa);
+}
+
+.btn-primary:hover {
+    background-color: var(--azul-verde);
+    border-color: var(--azul-verde);
+}
+
+.btn-warning {
+    background-color: var(--laranja);
+    border-color: var(--laranja);
+    color: white;
+}
+
+.text-petcontrol {
+    color: var(--turquesa) !important;
+}
+
+.border-petcontrol {
+    border-color: var(--turquesa) !important;
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--turquesa), var(--azul-verde));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    margin: 0 auto 1rem;
+}
+
+.logo-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-icon {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, var(--azul-verde), var(--turquesa));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3.5rem;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.logo-text {
+    text-align: center;
+}
+
+.logo-main {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.logo-sub {
+    display: block;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.9);
+    font-weight: 300;
+}
+/* ... (todo o restante do CSS que estava no HTML) */
