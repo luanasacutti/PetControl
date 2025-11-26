@@ -18,7 +18,7 @@ echo Usando Raylib: "%RAYLIB_PATH%"
     -L"%RAYLIB_PATH%\lib" ^
     -lraylib -lopengl32 -lgdi32 -lwinmm -lm ^
     -static ^
-    -o PetControl.exe
+    -o ..\PetControl.exe
 
 if %errorlevel% neq 0 (
     echo.
@@ -32,6 +32,6 @@ if %errorlevel% neq 0 (
 echo.
 echo ================================
 echo Compilado com sucesso!
-echo Saída: PetControl.exe
+echo Saída: ..\PetControl.exe
 echo ================================
 pause
