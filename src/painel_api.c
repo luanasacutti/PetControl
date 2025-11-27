@@ -512,10 +512,7 @@ int main(void) {
     const double AUTO_REFRESH_INTERVAL = 10.0;
 
     while (!WindowShouldClose()) {
-        printf("LOOP rodando...\n");
-fflush(stdout);
-
-
+        
         double now = GetTime();
         if (now - lastAutoRefresh > AUTO_REFRESH_INTERVAL) {
             carregarClientesAPI();

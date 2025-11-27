@@ -234,35 +234,4 @@ void exportar_csv() {
     printf("{\"success\": true, \"file\": \"clientes_export.csv\"}");
 }
 
-int main(int argc, char *argv[]) {
-    // Inicializar banco
-    inicializar_banco();
-    
-    if (argc < 2) {
-        printf("{\"error\": \"Comando não especificado\"}");
-        return 1;
-    }
-    
-    char *comando = argv[1];
-    
-    if (strcmp(comando, "listar_clientes") == 0) {
-        listar_clientes();
-    }
-    else if (strcmp(comando, "cadastrar_cliente") == 0 && argc == 8) {
-        cadastrar_cliente(argv[2], argv[3], argv[4], argv[5], argv[6], argv[7]);
-    }
-    else if (strcmp(comando, "enviar_email") == 0 && argc == 5) {
-        enviar_email(argv[2], argv[3], argv[4]);
-    }
-    else if (strcmp(comando, "verificar_vencimentos") == 0) {
-        verificar_vencimentos();
-    }
-    else if (strcmp(comando, "exportar_csv") == 0) {
-        exportar_csv();
-    }
-    else {
-        printf("{\"error\": \"Comando inválido\"}");
-    }
-    
-    return 0;
-}
+

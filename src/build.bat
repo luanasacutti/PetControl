@@ -14,11 +14,14 @@ echo Usando Raylib: "%RAYLIB_PATH%"
     main.c ^
     painel_api.c ^
     sqlite3.c ^
+    -I"." ^
     -I"%RAYLIB_PATH%\include" ^
     -L"%RAYLIB_PATH%\lib" ^
     -lraylib -lopengl32 -lgdi32 -lwinmm -lm ^
     -static ^
     -o ..\PetControl.exe
+
+
 
 if %errorlevel% neq 0 (
     echo.

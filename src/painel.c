@@ -76,11 +76,12 @@ static Color ColorLerp(Color a, Color b, float t) {
     };
 }
 
-static Color Fade(Color c, float f) {
+static Color FadeCustom(Color c, float f) {
     Color out = c;
     out.a = (unsigned char)(c.a * f);
     return out;
 }
+
 
 // ------------------------------------------------------------
 // Calcular dias restantes
@@ -302,7 +303,8 @@ void Card(Rectangle r, const char *titulo, int valor, Color cor) {
 
     DrawRectangleRounded(r, 0.22f, 12, cor);
     // highlight
-    DrawRectangleRounded((Rectangle){r.x, r.y, r.width, r.height*0.34f}, 0.22f, 12, Fade(topBright, 0.22f));
+    DrawRectangleRounded((Rectangle){r.x, r.y, r.width, r.height*0.34f}, 0.22f, 12, FadeCustom(topBright, 0.22f));
+
 
     // titulo
     DrawTextEx(gFontBold.texture.id ? gFontBold : (gFont.texture.id ? gFont : GetFontDefault()),
