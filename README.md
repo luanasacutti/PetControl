@@ -21,8 +21,9 @@ Aplicação desenvolvida em C + Raylib + SQLite, com atualização automática e
 
 🎨 Design moderno (Fonte Poppins + UI verde soft)
 
-```text
-📂 Estrutura do Projeto (Desktop)  
+📂 Estrutura do Projeto (Desktop) 
+
+```text 
 PetControl/
 ├── src/
 │   ├── main.c
@@ -61,20 +62,23 @@ Raylib 5.0 (Win64)
 GCC WinLibs (mingw-w64)
 
 SQLite3 (já incluso)
-
+```text 
 curl.exe instalado em:
 C:\curl\curl.exe
+```
 
 ▶️ Compilação
-
+```text 
 Dentro da pasta /src, execute:
 
 build.bat
-
+```
 
 O script gera:
 
+```text
 PetControl.exe
+```
 
 🧩 2) PetControl Web — Plataforma Online
 
@@ -103,14 +107,19 @@ Acesse:
 👉 https://luanasacutti.github.io/PetControl/
 
 Ou abra localmente:
-
+```text
 open index.html
+```
 
-👩‍💻 Equipe Desenvolvedora
-Nome	Função
-Guilherme Almeida	Back-end & Database
-Luana Sacutti	Full-stack Development
-Maria Eduarda Ferraz	Front-end & Design
+## 👩‍💻 Equipe Desenvolvedora
+
+| Nome                  | Função                |
+|----------------------|------------------------|
+| **Guilherme Almeida** | Back-end & Database    |
+| **Luana Sacutti**     | Full-stack Development |
+| **Maria Eduarda Ferraz** | Front-end & Design |
+
+
 📞 Contato
 
 Desenvolvido com ❤️ pela equipe PetControl.
