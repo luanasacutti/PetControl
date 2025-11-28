@@ -21,7 +21,8 @@ Aplicação desenvolvida em C + Raylib + SQLite, com atualização automática e
 
 🎨 Design moderno (Fonte Poppins + UI verde soft)
 
-📁 Estrutura do Projeto (Desktop)
+```text
+📂 Estrutura do Projeto (Desktop)  
 PetControl/
 ├── src/
 │   ├── main.c
@@ -37,13 +38,15 @@ PetControl/
 │       └── Poppins-SemiBold.ttf
 │
 ├── database/
-│   └── agendpet.db        (não enviado ao GitHub)
+│   └── agendpet.db   (não enviado ao GitHub)
 │
 ├── config/
-│   └── send_email.ps1     (opcional)
+│   └── send_email.ps1   (opcional)
 │
 ├── .gitignore
 └── README.md
+```
+
 
 
 📌 Observação:
