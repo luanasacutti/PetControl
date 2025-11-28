@@ -1,41 +1,27 @@
-🐾 PetControl – Sistema Completo de Gerenciamento para Pet Shops
+🐾 PetControl — Sistema de Gestão
 
-O PetControl é um ecossistema integrado que conecta:
+Sistema completo para pet shops, composto por duas plataformas integradas:
+PetControl Desktop (C + Raylib + SQLite) e PetControl Web (Java + MySQL + Front-end).
 
-✔ Aplicativo Desktop (C + Raylib + SQLite)
-com
-✔ Plataforma Web (Node.js + API REST + HTML/CSS/JS)
+🧩 1) PetControl Desktop — Gerenciamento de Planos
 
-Permitindo que o pet shop gerencie seus clientes, planos, vencimentos e visualize tudo de forma clara, rápida e profissional.
-
-🧩 1) PetControl Desktop
-🖥 Tecnologias
-
-C (ISO C99)
-
-Raylib 5.0 (interface moderna, responsiva e rápida)
-
-SQLite3 (banco de dados local)
-
-cURL (consumo de API web)
+Aplicação desenvolvida em C + Raylib + SQLite, com atualização automática e visual moderno.
 
 ✨ Funcionalidades
 
-🔍 Consulta automática dos cadastros feitos pelo site
+🔍 Consulta de cadastros feitos pelo site
 
-🔄 Sincronização via API (GET /api/clientes)
+📊 Exportação de relatórios em CSV
 
-✉️ Envio automático de e-mails para planos próximos ao vencimento
+✉️ Envio automático de e-mails de aviso para planos próximos do vencimento
 
-📊 Exportação de relatórios CSV
+🗄 Banco de dados local SQLite3
 
-🗂 Design moderno (Poppins font + UI verde soft)
+🔄 Atualização automática a cada 10 segundos
 
-🗄 Banco SQLite local
+🎨 Design moderno (Fonte Poppins + UI verde soft)
 
-🚀 Atualização automática a cada 10 segundos
-
-📁 Estrutura do Projeto — Desktop
+📁 Estrutura do Projeto (Desktop)
 PetControl/
 ├── src/
 │   ├── main.c
@@ -43,36 +29,38 @@ PetControl/
 │   ├── sqlite3.c
 │   ├── sqlite3.h
 │   ├── build.bat
-│   └── assets/
-│       ├── logo.png
-│       └── fonts/
-│           ├── Poppins-Regular.ttf
-│           └── Poppins-SemiBold.ttf
+│
+├── assets/
+│   ├── logo.png
+│   └── fonts/
+│       ├── Poppins-Regular.ttf
+│       └── Poppins-SemiBold.ttf
 │
 ├── database/
-│   └── agendpet.db   (não enviado ao GitHub)
+│   └── agendpet.db        (não enviado ao GitHub)
 │
 ├── config/
-│   └── send_email.ps1
+│   └── send_email.ps1     (opcional)
 │
 ├── .gitignore
 └── README.md
 
 
 📌 Observação:
-As pastas raylib/ e mingw-w64/ não vão para o GitHub.
+As pastas raylib/ e mingw-w64/ NÃO vão para o GitHub.
 São ferramentas do desenvolvedor e não fazem parte do projeto.
 
 🔧 Como Compilar (Windows)
-📌 Dependências necessárias:
+📦 Dependências necessárias
 
 Raylib 5.0 (Win64)
 
 GCC WinLibs (mingw-w64)
 
-SQLite3 (já incluso no projeto)
+SQLite3 (já incluso)
 
-curl.exe instalado em: C:\curl\curl.exe
+curl.exe instalado em:
+C:\curl\curl.exe
 
 ▶️ Compilação
 
@@ -85,100 +73,41 @@ O script gera:
 
 PetControl.exe
 
-🧩 2) PetControl Web
-🌐 Tecnologias
+🧩 2) PetControl Web — Plataforma Online
 
-Node.js (API)
+Sistema moderno e completo para gestão de pet shops, desenvolvido em Java + MySQL + HTML/CSS/JS.
 
-Express.js (rotas)
+✨ Funcionalidades Principais
 
-SQLite3 (mesmo DB utilizado pelo Desktop)
+📅 Agenda inteligente
 
-HTML / CSS / JavaScript
+💰 PDV com emissão de notas
 
-JSON Endpoints
+🐶 Cadastro completo dos pets
 
-📊 Funcionalidades Web
+👥 Gestão de clientes
 
-📅 Cadastro de clientes
+📦 Controle de estoque com alertas
 
-🐶 Cadastro de pets
+📊 Relatórios de desempenho
 
-💳 Compra de planos
+🌐 Interface moderna e responsiva
 
-🔗 Envio dos dados para o Desktop via API
+🌐 Demonstração Online
 
-📦 Estrutura escalável
+Acesse:
 
-⭐ Interface amigável
+👉 https://luanasacutti.github.io/PetControl/
 
-📁 Estrutura do Projeto — Web
-web/
-├── server.js
-├── api/
-│   ├── clientes.js
-│   ├── planos.js
-│   └── email.js
-├── public/
-│   ├── index.html
-│   ├── clientes.html
-│   ├── planos.html
-│   ├── vencimentos.html
-│   ├── css/
-│   └── js/
-└── package.json
+Ou abra localmente:
 
-🔌 Rotas da API
-📥 GET /api/clientes
-
-Retorna lista de clientes em JSON.
-
-📤 POST /api/enviar-email
-
-Dispara o script PowerShell para enviar aviso de vencimento.
-
-📥 GET /api/planos
-
-Lista planos disponíveis.
-
-🚀 Como Rodar a Plataforma Web
-
-Entrar na pasta /web
-
-Instalar dependências:
-
-npm install
-
-
-Iniciar o servidor:
-
-node server.js
-
-
-O site abre em:
-
-http://localhost:3000
-
-🧩 Integração Desktop ↔ Web (API REST)
-
-O aplicativo em C:
-
-✔ Faz GET clientes
-✔ Converte JSON → Estrutura Cliente
-✔ Atualiza interface em tempo real
-✔ Envia e-mail via POST /api/enviar-email
-
-Fluxo:
-
-Site → Node API → SQLite DB
-Desktop → API → sincroniza automaticamente
+open index.html
 
 👩‍💻 Equipe Desenvolvedora
 Nome	Função
-Guilherme Almeida	Back-end / Banco de Dados
-Luana Sacutti	Full-stack & UI/UX
+Guilherme Almeida	Back-end & Database
+Luana Sacutti	Full-stack Development
 Maria Eduarda Ferraz	Front-end & Design
 📞 Contato
 
 Desenvolvido com ❤️ pela equipe PetControl.
-Para dúvidas e contribuições, abra uma issue no GitHub!
