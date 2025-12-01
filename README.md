@@ -6,29 +6,34 @@ O PetControl é um sistema híbrido criado para auxiliar pet shops na organizaç
 
 Ele é composto por duas plataformas integradas:
 
-PetControl Desktop (C + Raylib + SQLite)
+**PetControl Desktop (C + Raylib + SQLite)**
 
-PetControl Web (Node.js + Express + HTML/CSS/JS)
+**PetControl Web (Node.js + Express + HTML/CSS/JS)**
 
 🖥️ 1) PetControl Desktop — Aplicação em C + Raylib
 
 Interface moderna, rápida e responsiva desenvolvida em C, utilizando:
 
-Raylib 5.0 (interface gráfica)
+**Raylib 5.0 (interface gráfica)**
 
-SQLite3 (banco local)
+**SQLite3 (banco local)**
 
-Envio automático de e-mails por PowerShell
+**Envio automático de e-mails por PowerShell**
 
-Atualização automática dos dados a cada 10 segundos
+**Atualização automática dos dados a cada 10 segundos**
 
 ✨ Funcionalidades
 
 ✔️ Consulta dos cadastros feitos pelo site
+
 ✔️ Exportação de relatórios em CSV
+
 ✔️ Envio automático de e-mails para planos vencidos / próximos do vencimento
+
 ✔️ Interface moderna (Poppins + UI verde soft)
+
 ✔️ Sistema leve, rápido e totalmente offline
+
 ✔️ Banco SQLite incluso no repositório
 
 🧱 Estrutura do Projeto (Desktop)
