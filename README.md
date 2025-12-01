@@ -6,9 +6,9 @@ O PetControl é um sistema híbrido criado para auxiliar pet shops na organizaç
 
 Ele é composto por duas plataformas integradas:
 
--**PetControl Desktop** (C + Raylib + SQLite)
+- **PetControl Desktop** (C + Raylib + SQLite)
 
--**PetControl Web** (Node.js + Express + HTML/CSS/JS)
+- **PetControl Web** (Node.js + Express + HTML/CSS/JS)
 
 **🖥️ 1) PetControl Desktop — Aplicação em C + Raylib**
 
