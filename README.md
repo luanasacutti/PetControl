@@ -1,4 +1,4 @@
-🐾 PetControl — Sistema Completo para Pet Shops
+**🐾 PetControl — Sistema Completo para Pet Shops**
 
 Aplicação Desktop + Plataforma Web
 
@@ -6,23 +6,23 @@ O PetControl é um sistema híbrido criado para auxiliar pet shops na organizaç
 
 Ele é composto por duas plataformas integradas:
 
-**PetControl Desktop (C + Raylib + SQLite)**
+-**PetControl Desktop** (C + Raylib + SQLite)
 
-**PetControl Web (Node.js + Express + HTML/CSS/JS)**
+-**PetControl Web** (Node.js + Express + HTML/CSS/JS)
 
-🖥️ 1) PetControl Desktop — Aplicação em C + Raylib
+**🖥️ 1) PetControl Desktop — Aplicação em C + Raylib**
 
 Interface moderna, rápida e responsiva desenvolvida em C, utilizando:
 
-**Raylib 5.0 (interface gráfica)**
+-**Raylib 5.0 (interface gráfica)**
 
-**SQLite3 (banco local)**
+-**SQLite3 (banco local)**
 
-**Envio automático de e-mails por PowerShell**
+-**Envio automático de e-mails por PowerShell**
 
 **Atualização automática dos dados a cada 10 segundos**
 
-✨ Funcionalidades
+**✨ Funcionalidades**
 
 ✔️ Consulta dos cadastros feitos pelo site
 
@@ -36,7 +36,7 @@ Interface moderna, rápida e responsiva desenvolvida em C, utilizando:
 
 ✔️ Banco SQLite incluso no repositório
 
-🧱 Estrutura do Projeto (Desktop)
+**🧱 Estrutura do Projeto (Desktop)**
 ```text
 PetControl/
 ├── src/
@@ -62,10 +62,10 @@ PetControl/
 └── PetControl.exe   (gerado pelo build)
 ```
 
-⚙️ Como Compilar o Desktop (Windows)
-📦 Dependências obrigatórias
+**⚙️ Como Compilar o Desktop (Windows)**
+**📦 Dependências obrigatórias**
 
-Raylib 5.0 Win64
+**Raylib 5.0 Win64**
 
 GCC WinLibs (mingw-w64)
 
