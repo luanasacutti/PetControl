@@ -91,13 +91,19 @@ Versão web do sistema, com interface responsiva e APIs internas em Node.js.
 
 ✨ Funcionalidades
 
-📅 Agenda inteligente
-🐶 Cadastro completo de pets
-👥 Gestão de clientes
-📦 Controle de estoque com alertas
-💰 PDV simples
-📊 Relatórios
-🌎 Interface moderna e responsiva
+Agenda inteligente
+
+Cadastro completo de pets
+
+Gestão de clientes
+
+Controle de estoque com alertas
+
+PDV simples
+
+Relatórios
+
+Interface moderna e responsiva
 
 📂 Estrutura da pasta web/
 ```text
