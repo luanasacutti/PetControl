@@ -14,13 +14,13 @@ Ele é composto por duas plataformas integradas:
 
 Interface moderna, rápida e responsiva desenvolvida em C, utilizando:
 
--**Raylib 5.0 (interface gráfica)**
+- **Raylib 5.0 (interface gráfica)**
 
--**SQLite3 (banco local)**
+- **SQLite3 (banco local)**
 
--**Envio automático de e-mails por PowerShell**
+- **Envio automático de e-mails por PowerShell**
 
-**Atualização automática dos dados a cada 10 segundos**
+- **Atualização automática dos dados a cada 10 segundos**
 
 **✨ Funcionalidades**
 
@@ -65,11 +65,11 @@ PetControl/
 **⚙️ Como Compilar o Desktop (Windows)**
 **📦 Dependências obrigatórias**
 
-**Raylib 5.0 Win64**
+- **Raylib 5.0 Win64**
 
-GCC WinLibs (mingw-w64)
+- **GCC WinLibs (mingw-w64)**
 
-SQLite3 (já incluso)
+- **SQLite3 (já incluso)**
 
 ▶️ Compilar
 
@@ -143,11 +143,8 @@ node server.js
 
 👉 http://localhost:3000
 
-🌎 Versão Online (GitHub Pages)
-
-Você também pode acessar a versão web diretamente:
-
-👉 https://luanasacutti.github.io/PetControl/
+🌎 Versão Online 
+Clique diretamente no arquivo index.html na pasta web/public
 
 ## 👩‍💻 Equipe Desenvolvedora
 
