@@ -1,36 +1,46 @@
-🐾 PetControl — Sistema de Gestão
+🐾 PetControl — Sistema Completo para Pet Shops
 
-Sistema completo para pet shops, composto por duas plataformas integradas:
-PetControl Desktop (C + Raylib + SQLite) e PetControl Web (Java + MySQL + Front-end).
+Aplicação Desktop + Plataforma Web
 
-🧩 1) PetControl Desktop — Gerenciamento de Planos
+O PetControl é um sistema híbrido criado para auxiliar pet shops na organização de clientes, planos, agendamentos e controle financeiro.
 
-Aplicação desenvolvida em C + Raylib + SQLite, com atualização automática e visual moderno.
+Ele é composto por duas plataformas integradas:
+
+PetControl Desktop (C + Raylib + SQLite)
+
+PetControl Web (Node.js + Express + HTML/CSS/JS)
+
+🖥️ 1) PetControl Desktop — Aplicação em C + Raylib
+
+Interface moderna, rápida e responsiva desenvolvida em C, utilizando:
+
+Raylib 5.0 (interface gráfica)
+
+SQLite3 (banco local)
+
+Envio automático de e-mails por PowerShell
+
+Atualização automática dos dados a cada 10 segundos
 
 ✨ Funcionalidades
 
-🔍 Consulta de cadastros feitos pelo site
+✔️ Consulta dos cadastros feitos pelo site
+✔️ Exportação de relatórios em CSV
+✔️ Envio automático de e-mails para planos vencidos / próximos do vencimento
+✔️ Interface moderna (Poppins + UI verde soft)
+✔️ Sistema leve, rápido e totalmente offline
+✔️ Banco SQLite incluso no repositório
 
-📊 Exportação de relatórios em CSV
-
-✉️ Envio automático de e-mails de aviso para planos próximos do vencimento
-
-🗄 Banco de dados local SQLite3
-
-🔄 Atualização automática a cada 10 segundos
-
-🎨 Design moderno (Fonte Poppins + UI verde soft)
-
-📂 Estrutura do Projeto (Desktop) 
-
-```text 
+🧱 Estrutura do Projeto (Desktop)
+```text
 PetControl/
 ├── src/
-│   ├── main.c
+│   ├── painel.c
 │   ├── painel_api.c
 │   ├── sqlite3.c
 │   ├── sqlite3.h
 │   ├── build.bat
+│   └── main.c (não utilizado)
 │
 ├── assets/
 │   ├── logo.png
@@ -39,77 +49,100 @@ PetControl/
 │       └── Poppins-SemiBold.ttf
 │
 ├── database/
-│   └── agendpet.db   (não enviado ao GitHub)
+│   └── agendpet.db
 │
 ├── config/
-│   └── send_email.ps1   (opcional)
+│   └── send_email.ps1
 │
-├── .gitignore
-└── README.md
+└── PetControl.exe   (gerado pelo build)
 ```
 
+⚙️ Como Compilar o Desktop (Windows)
+📦 Dependências obrigatórias
 
-
-📌 Observação:
-As pastas raylib/ e mingw-w64/ NÃO vão para o GitHub.
-São ferramentas do desenvolvedor e não fazem parte do projeto.
-
-🔧 Como Compilar (Windows)
-📦 Dependências necessárias
-
-Raylib 5.0 (Win64)
+Raylib 5.0 Win64
 
 GCC WinLibs (mingw-w64)
 
 SQLite3 (já incluso)
-```text 
-curl.exe instalado em:
-C:\curl\curl.exe
-```
 
-▶️ Compilação
-```text 
-Dentro da pasta /src, execute:
+▶️ Compilar
 
+Abra o terminal na pasta /src e execute:
+```text
 build.bat
 ```
 
-O script gera:
 
-```text
-PetControl.exe
+Após a compilação, o executável é gerado em:
+```text'
+
+../PetControl.exe
 ```
 
-🧩 2) PetControl Web — Plataforma Online
+🌐 2) PetControl Web — Plataforma Online (Node.js + HTML)
 
-Sistema moderno e completo para gestão de pet shops, desenvolvido em Java + MySQL + HTML/CSS/JS.
+Versão web do sistema, com interface responsiva e APIs internas em Node.js.
 
-✨ Funcionalidades Principais
+✨ Funcionalidades
 
 📅 Agenda inteligente
-
-💰 PDV com emissão de notas
-
-🐶 Cadastro completo dos pets
-
+🐶 Cadastro completo de pets
 👥 Gestão de clientes
-
 📦 Controle de estoque com alertas
+💰 PDV simples
+📊 Relatórios
+🌎 Interface moderna e responsiva
 
-📊 Relatórios de desempenho
+📂 Estrutura da pasta web/
+```text
+web/
+├── api/
+│   ├── clientes.js
+│   ├── planos.js
+│   ├── vencimentos.js
+│   └── email.js
+│
+├── public/
+│   ├── assets/
+│   ├── css/
+│   ├── js/
+│   ├── index.html
+│   ├── clientes.html
+│   ├── planos.html
+│   └── vencimentos.html
+│
+├── server.js
+├── package.json
+└── package-lock.json
+```
 
-🌐 Interface moderna e responsiva
+▶️ Como Rodar o PetControl Web (VS Code)
+1. Acesse a pasta do projeto:
+```text
+cd web
+```
 
-🌐 Demonstração Online
+2. Instale as dependências:
+```text
+npm install
+```
 
-Acesse:
+3. Execute o servidor:
+
+```text
+node server.js
+```
+
+4. Acesse no navegador:
+
+👉 http://localhost:3000
+
+🌎 Versão Online (GitHub Pages)
+
+Você também pode acessar a versão web diretamente:
 
 👉 https://luanasacutti.github.io/PetControl/
-
-Ou abra localmente:
-```text
-open index.html
-```
 
 ## 👩‍💻 Equipe Desenvolvedora
 
@@ -119,7 +152,7 @@ open index.html
 | **Luana Sacutti**     | Full-stack Development |
 | **Maria Eduarda Ferraz** | Front-end & Design |
 
-
-📞 Contato
+💌 Contato
 
 Desenvolvido com ❤️ pela equipe PetControl.
+Para dúvidas ou feedbacks, entre em contato pelo GitHub.
